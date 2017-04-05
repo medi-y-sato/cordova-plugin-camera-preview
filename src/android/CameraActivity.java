@@ -255,7 +255,7 @@ public class CameraActivity extends Fragment {
     // Because the Camera object is a shared resource, it's very important to release it when the activity is paused.
     if (mCamera != null) {
       setDefaultCameraId();
-      mPreview.setCamera(null, -1);
+      mPreview.setCamera(null);
       mCamera.setPreviewCallback(null);
       mCamera.release();
       mCamera = null;
