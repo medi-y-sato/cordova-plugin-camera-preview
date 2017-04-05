@@ -304,7 +304,7 @@ public class CameraActivity extends Fragment {
         String currentFlashModePreviousCamera = cameraParameters.getFlashMode();
         if (supportedFlashModesNewCamera != null && supportedFlashModesNewCamera.contains(currentFlashModePreviousCamera)) {
           Log.d(TAG, "current flash mode supported on new camera. setting params");
-          mCamera.setParameters(cameraParameters);
+//          mCamera.setParameters(cameraParameters);
         } else {
           Log.d(TAG, "current flash mode NOT supported on new camera");
         }
